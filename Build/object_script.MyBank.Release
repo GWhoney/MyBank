@@ -1,0 +1,10 @@
+release/addbill.o
+release/clock_in.o
+release/main.o
+release/mybank.o
+release/yu_e.o
+release/qrc_res.o
+release/moc_addbill.o
+release/moc_clock_in.o
+release/moc_mybank.o
+release/moc_yu_e.o

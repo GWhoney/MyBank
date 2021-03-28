@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyBank</class>
+ <widget class="QMainWindow" name="MyBank">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>483</width>
+    <height>407</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MyBank</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>483</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="Addbill"/>
+    <addaction name="CheckBill"/>
+   </widget>
+   <widget class="QMenu" name="menuremaining_sum">
+    <property name="title">
+     <string>remaining sum</string>
+    </property>
+    <addaction name="Check_YuE"/>
+   </widget>
+   <widget class="QMenu" name="menuEveryDay_Clock">
+    <property name="title">
+     <string>EveryDay Clock</string>
+    </property>
+    <addaction name="Clock_in"/>
+   </widget>
+   <addaction name="menuMenu"/>
+   <addaction name="menuremaining_sum"/>
+   <addaction name="menuEveryDay_Clock"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="Addbill">
+   <property name="text">
+    <string>AddBill</string>
+   </property>
+  </action>
+  <action name="CheckBill">
+   <property name="text">
+    <string>CheckBill</string>
+   </property>
+  </action>
+  <action name="Check_YuE">
+   <property name="text">
+    <string>Check</string>
+   </property>
+  </action>
+  <action name="Clock_in">
+   <property name="text">
+    <string>Clock in</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
