@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>bk.jpg</file>
+        <file>iconfinder_love-notebook_2903202.png</file>
+        <file>bk2.jpg</file>
+    </qresource>
+</RCC>
