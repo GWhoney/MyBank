@@ -14,6 +14,7 @@
 #include <QAbstractItemModel>
 #include <QSqlDatabase>
 #include <QSqlQuery>
+#include <QVariantList>
 
 
 namespace Ui {
@@ -37,7 +38,18 @@ private slots:
 
 private:
     Ui::addBill *ui;
-
+    QSqlDatabase db;
 };
 
+#if 0
+create table Bill(
+    -> num int not null auto_increment,
+    -> ID varchar(10) not null,
+    -> Goods varchar(50) not null,
+    -> Expense double not null,
+    -> Way varchar(20) not null,
+    -> Kind varchar(20) not null,
+    -> primary key (num)
+    -> )engine=innoDB default charset=utf8;
+#endif
 #endif // ADDBILL_H

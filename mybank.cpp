@@ -10,6 +10,18 @@ MyBank::MyBank(QWidget *parent)
     initSlots();
     QIcon ic(QString(":/iconfinder_love-notebook_2903202.png"));
     this->setWindowIcon(ic);
+
+    QSqlDatabase db=QSqlDatabase::addDatabase(QString("QMYSQL"));
+    db.setHostName(QString("127.0.0.1"));
+    db.setUserName(QString("root"));
+    db.setPassword(QString("20200502"));
+    db.setDatabaseName(QString("Comp"));
+    if(!db.open())
+    {
+        QMessageBox::information(0,"提示","打开数据库失败",QMessageBox::Ok);
+        return;
+    }
+    qDebug()<<"连接数据库成功！";
 }
 
 MyBank::~MyBank()

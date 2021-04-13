@@ -40,29 +40,36 @@ void yu_e::initBuddy()
 
 void yu_e::showYue()
 {
-    QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE","rconntosqlite");
-    db.setDatabaseName("MyBank.db");
-    if(db.open())
-    {
-        QSqlQuery query(db);
-        QString line="select * from Bill;";
-        bool ok=query.exec(line);
-        query.next();
-        QString one=query.value(0).toString();
-        QString two=query.value(1).toString();
-        QString there=query.value(2).toString();
-        QString four=query.value(3).toString();
-        QString five=query.value(4).toString();
-        if(ok)
-        {
-            ui->WeChat_2->setText(one);
-            ui->Alipay_2->setText(two);
-            ui->NongShangBank_2->setText(there);
-            ui->JianSheBang_2->setText(four);
-            ui->Cash_2->setText(five);
-        }
 
+    QSqlDatabase db=QSqlDatabase::addDatabase("QMYSQL");
+    db.setHostName("127.0.0.1");
+    db.setUserName("root");
+    db.setPassword("20200502");
+    db.setDatabaseName("MyBank");
+    if(!db.open())
+    {
+        QMessageBox::information(0,"错误","连接数据库失败",QMessageBox::Ok);
+        return;
     }
-    db.close();
+    QSqlQuery query;
+    query.exec("select * from Diposit;");
+    while(query.next())
+    {
+        QString WeChat=query.value(0).toString();
+        QString Alipay=query.value(1).toString();
+        QString NongShang=query.value(2).toString();
+        QString JianShe=query.value(3).toString();
+        QString Cash=query.value(4).toString();
+        QString HuaBei=query.value(5).toString();
+        QString Loans=query.value(6).toString();
+
+        ui->WeChat_2->setText(WeChat);
+        ui->Alipay_2->setText(Alipay);
+        ui->NongShangBank_2->setText(NongShang);
+        ui->JianSheBang_2->setText(JianShe);
+        ui->Cash_2->setText(Cash);
+        ui->HuaBei_2->setText(HuaBei);
+        ui->loans_2->setText(Loans);
+    }
 }
 

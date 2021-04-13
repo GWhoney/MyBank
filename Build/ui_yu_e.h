@@ -41,6 +41,7 @@ public:
     QLabel *label_2;
     QLabel *label_7;
     QLabel *Baby_Cash_2;
+    QLabel *label_8;
     QGroupBox *Baby_HuaBei;
     QLabel *HuaBei;
     QLabel *loans;
@@ -97,7 +98,7 @@ public:
         Baby_WeChat->setFont(font);
         Baby_Cash = new QLabel(groupBox);
         Baby_Cash->setObjectName(QString::fromUtf8("Baby_Cash"));
-        Baby_Cash->setGeometry(QRect(250, 180, 61, 21));
+        Baby_Cash->setGeometry(QRect(250, 210, 61, 21));
         Baby_Cash->setFont(font);
         Baby_Alipay = new QLabel(groupBox);
         Baby_Alipay->setObjectName(QString::fromUtf8("Baby_Alipay"));
@@ -143,6 +144,10 @@ public:
         Baby_Cash_2->setObjectName(QString::fromUtf8("Baby_Cash_2"));
         Baby_Cash_2->setGeometry(QRect(300, 180, 61, 21));
         Baby_Cash_2->setFont(font);
+        label_8 = new QLabel(groupBox);
+        label_8->setObjectName(QString::fromUtf8("label_8"));
+        label_8->setGeometry(QRect(250, 170, 121, 21));
+        label_8->setFont(font);
         Baby_HuaBei = new QGroupBox(yu_e);
         Baby_HuaBei->setObjectName(QString::fromUtf8("Baby_HuaBei"));
         Baby_HuaBei->setGeometry(QRect(10, 290, 451, 191));
@@ -200,6 +205,7 @@ public:
         label_2->setText(QString());
         label_7->setText(QString());
         Baby_Cash_2->setText(QString());
+        label_8->setText(QCoreApplication::translate("yu_e", "\345\273\272\350\256\276\351\223\266\350\241\214\345\215\241\357\274\232", nullptr));
         Baby_HuaBei->setTitle(QCoreApplication::translate("yu_e", "\350\264\237\345\200\272", nullptr));
         HuaBei->setText(QCoreApplication::translate("yu_e", "\350\212\261\345\221\227\357\274\232", nullptr));
         loans->setText(QCoreApplication::translate("yu_e", "\350\264\267\346\254\276\357\274\232", nullptr));

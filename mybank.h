@@ -6,6 +6,8 @@
 #include <QPixmap>
 #include <QPainter>
 #include <QPaintEvent>
+#include <QSqlQuery>
+#include <QVariantList>
 #include "addbill.h"
 #include "yu_e.h"
 #include "clock_in.h"
