@@ -56,7 +56,7 @@ void addBill::on_Btn_sure_clicked()
     QString Expense=ui->how_editLine->text();
     QString How_Way=ui->how_comboBox->currentText();
     QString Kind=ui->buttonGroup->checkedButton()->text();
-    QString Sure=Name+"\n"+Goods+"\n"+Expense+"\n"+How_Way+"\n"+Kind+"\n"+Sure;
+    QString Sure=Name+"\n"+Goods+"\n"+Expense+"\n"+How_Way+"\n"+Kind;
     if(QMessageBox::information(0,"信息确认",Sure,"确认","取消")==0)
     {
 
