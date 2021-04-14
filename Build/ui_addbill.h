@@ -167,6 +167,8 @@ public:
         how_comboBox->addItem(QString());
         how_comboBox->addItem(QString());
         how_comboBox->addItem(QString());
+        how_comboBox->addItem(QString());
+        how_comboBox->addItem(QString());
         how_comboBox->setObjectName(QString::fromUtf8("how_comboBox"));
 
         horizontalLayout_2->addWidget(how_comboBox);
@@ -349,9 +351,11 @@ public:
         label_2->setText(QCoreApplication::translate("addBill", "\347\224\250\344\273\200\344\271\210\344\271\260\347\232\204\357\274\232", nullptr));
         how_comboBox->setItemText(0, QCoreApplication::translate("addBill", "\345\276\256\344\277\241", nullptr));
         how_comboBox->setItemText(1, QCoreApplication::translate("addBill", "\346\224\257\344\273\230\345\256\235", nullptr));
-        how_comboBox->setItemText(2, QCoreApplication::translate("addBill", "\351\223\266\350\241\214\345\215\241", nullptr));
-        how_comboBox->setItemText(3, QCoreApplication::translate("addBill", "\350\212\261\345\221\227", nullptr));
-        how_comboBox->setItemText(4, QCoreApplication::translate("addBill", "\347\216\260\351\207\221", nullptr));
+        how_comboBox->setItemText(2, QCoreApplication::translate("addBill", "\345\206\234\345\225\206\351\223\266\350\241\214", nullptr));
+        how_comboBox->setItemText(3, QCoreApplication::translate("addBill", "\345\273\272\350\256\276\351\223\266\350\241\214", nullptr));
+        how_comboBox->setItemText(4, QCoreApplication::translate("addBill", "\350\212\261\345\221\227", nullptr));
+        how_comboBox->setItemText(5, QCoreApplication::translate("addBill", "\347\216\260\351\207\221", nullptr));
+        how_comboBox->setItemText(6, QCoreApplication::translate("addBill", "\350\264\267\346\254\276", nullptr));
 
         label_4->setText(QCoreApplication::translate("addBill", "\345\210\206\347\261\273\357\274\232", nullptr));
         radioButton->setText(QCoreApplication::translate("addBill", "\351\233\266\351\243\237", nullptr));

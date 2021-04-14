@@ -28,9 +28,8 @@ class addBill : public QWidget
 public:
     explicit addBill(QWidget *parent = nullptr);
     ~addBill();
+    void readInfo();
 
-    void sureClear();
-    void writeInSql();
 private slots:
 
 
@@ -39,6 +38,13 @@ private slots:
 private:
     Ui::addBill *ui;
     QSqlDatabase db;
+    double WeChat;
+    double Alipay;
+    double NongShangBank;
+    double JianSheBank;
+    double Cash;
+    double HuaBei;
+    double Loans;
 };
 
 #if 0

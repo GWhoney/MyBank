@@ -173,7 +173,12 @@
        </item>
        <item>
         <property name="text">
-         <string>银行卡</string>
+         <string>农商银行</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>建设银行</string>
         </property>
        </item>
        <item>
@@ -184,6 +189,11 @@
        <item>
         <property name="text">
          <string>现金</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>贷款</string>
         </property>
        </item>
       </widget>
