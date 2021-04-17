@@ -19,12 +19,21 @@ class Clock_in : public QWidget
 public:
     explicit Clock_in(QWidget *parent = nullptr);
     ~Clock_in();
+    void readInfo();
+    void clearFun();
 
 private slots:
     void on_pushButton_clicked();
 
 private:
     Ui::Clock_in *ui;
+    double WeChat;
+    double Alipay;
+    double NongShangBank;
+    double JianSheBank;
+    double Cash;
+    double HuaBei;
+    double Loans;
 };
 
 #endif // CLOCK_IN_H

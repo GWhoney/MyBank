@@ -15,6 +15,7 @@
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QVariantList>
+#include <QDateTime>
 
 
 namespace Ui {
@@ -29,6 +30,7 @@ public:
     explicit addBill(QWidget *parent = nullptr);
     ~addBill();
     void readInfo();
+    void clearFun();
 
 private slots:
 

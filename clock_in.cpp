@@ -19,6 +19,7 @@ Clock_in::Clock_in(QWidget *parent) :
         return;
     }
     qDebug()  << "连接数据库成功!";
+    readInfo();
 }
 
 Clock_in::~Clock_in()
@@ -39,4 +40,39 @@ void Clock_in::on_pushButton_clicked()
 
     ok=query.exec(QString("insert into Brush_Class(Website,Class_Name,Account,Password,Money) values('%1','%2','%3','%4',%5);").arg(Website).arg(Class_Name).arg(Account).arg(Password).arg(Money));
     qDebug()<<"插入数据："<<ok;
+
+    WeChat=WeChat+Money.toDouble();
+    qDebug()<<WeChat;
+    ok=query.exec(QString("update Diposit set WeChat_Gao=%1").arg(WeChat));
+    qDebug()<<"修改存款："<<ok;
+
+    clearFun();
+}
+void Clock_in::readInfo()
+{
+    QSqlQuery query;
+    bool ok=query.exec("select * from Diposit");
+    if(!ok)
+    {
+        QMessageBox::critical(0,"警告","数据库信息读取失败",QMessageBox::Ok);
+        return;
+    }
+    while(query.next())
+    {
+        WeChat=query.value(0).toDouble();
+        Alipay=query.value(1).toDouble();
+        NongShangBank=query.value(2).toDouble();
+        JianSheBank=query.value(3).toDouble();
+        Cash=query.value(4).toDouble();
+        HuaBei=query.value(5).toDouble();
+        Loans=query.value(6).toDouble();
+    }
+}
+
+void Clock_in::clearFun()
+{
+    ui->lineEdit_ClassName->setText("");
+    ui->lineEdit_Money->setText("");
+    ui->lineEdit_Account->setText("");
+    ui->lineEdit_Password->setText("");
 }

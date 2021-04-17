@@ -369,7 +369,7 @@ public:
         radioButton_9->setText(QCoreApplication::translate("addBill", "\345\250\261\344\271\220", nullptr));
         radioButton_10->setText(QCoreApplication::translate("addBill", "\351\245\255\351\245\255", nullptr));
         radioButton_11->setText(QCoreApplication::translate("addBill", "\345\226\235\347\232\204", nullptr));
-        radioButton_12->setText(QCoreApplication::translate("addBill", "\343\200\202\343\200\202", nullptr));
+        radioButton_12->setText(QCoreApplication::translate("addBill", "\345\205\266\344\273\226", nullptr));
         Btn_sure->setText(QCoreApplication::translate("addBill", "\347\241\256\350\256\244", nullptr));
         Btn_cencel->setText(QCoreApplication::translate("addBill", "\345\217\226\346\266\210", nullptr));
     } // retranslateUi
