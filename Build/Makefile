@@ -33,7 +33,7 @@ IDC           = idc
 IDL           = midl
 ZIP           = zip -r -9
 DEF_FILE      = 
-RES_FILE      = 
+RES_FILE      = MyBank_resource_res.o
 SED           = $(QMAKE) -install sed
 MOVE          = move
 SUBTARGETS    =  \
@@ -248,6 +248,7 @@ Makefile: ../MyBank.pro ../../../Qt/5.14.2/mingw73_64/mkspecs/win32-g++/qmake.co
 		../../../Qt/5.14.2/mingw73_64/mkspecs/features/qt_config.prf \
 		../../../Qt/5.14.2/mingw73_64/mkspecs/win32-g++/qmake.conf \
 		../../../Qt/5.14.2/mingw73_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../Qt/5.14.2/mingw73_64/mkspecs/features/exclusive_builds.prf \
 		../../../Qt/5.14.2/mingw73_64/mkspecs/features/toolchain.prf \
 		../../../Qt/5.14.2/mingw73_64/mkspecs/features/default_pre.prf \
@@ -277,7 +278,6 @@ Makefile: ../MyBank.pro ../../../Qt/5.14.2/mingw73_64/mkspecs/win32-g++/qmake.co
 		../../../Qt/5.14.2/mingw73_64/lib/Qt5Sql.prl \
 		../../../Qt/5.14.2/mingw73_64/lib/Qt5Core.prl \
 		../../../Qt/5.14.2/mingw73_64/lib/qtmain.prl \
-		.qmake.stash \
 		../../../Qt/5.14.2/mingw73_64/mkspecs/features/build_pass.prf \
 		../res.qrc
 	$(QMAKE) -o Makefile ..\MyBank.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
@@ -459,6 +459,7 @@ Makefile: ../MyBank.pro ../../../Qt/5.14.2/mingw73_64/mkspecs/win32-g++/qmake.co
 ../../../Qt/5.14.2/mingw73_64/mkspecs/features/qt_config.prf:
 ../../../Qt/5.14.2/mingw73_64/mkspecs/win32-g++/qmake.conf:
 ../../../Qt/5.14.2/mingw73_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../Qt/5.14.2/mingw73_64/mkspecs/features/exclusive_builds.prf:
 ../../../Qt/5.14.2/mingw73_64/mkspecs/features/toolchain.prf:
 ../../../Qt/5.14.2/mingw73_64/mkspecs/features/default_pre.prf:
@@ -488,7 +489,6 @@ Makefile: ../MyBank.pro ../../../Qt/5.14.2/mingw73_64/mkspecs/win32-g++/qmake.co
 ../../../Qt/5.14.2/mingw73_64/lib/Qt5Sql.prl:
 ../../../Qt/5.14.2/mingw73_64/lib/Qt5Core.prl:
 ../../../Qt/5.14.2/mingw73_64/lib/qtmain.prl:
-.qmake.stash:
 ../../../Qt/5.14.2/mingw73_64/mkspecs/features/build_pass.prf:
 ../res.qrc:
 qmake: FORCE
