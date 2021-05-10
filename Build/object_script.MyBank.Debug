@@ -1,10 +1,12 @@
 debug/addbill.o
 debug/clock_in.o
+debug/income.o
 debug/main.o
 debug/mybank.o
 debug/yu_e.o
 debug/qrc_res.o
 debug/moc_addbill.o
 debug/moc_clock_in.o
+debug/moc_income.o
 debug/moc_mybank.o
 debug/moc_yu_e.o

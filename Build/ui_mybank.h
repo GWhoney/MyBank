@@ -24,7 +24,7 @@ class Ui_MyBank
 {
 public:
     QAction *Addbill;
-    QAction *CheckBill;
+    QAction *Income;
     QAction *Check_YuE;
     QAction *Clock_in;
     QWidget *centralwidget;
@@ -42,8 +42,8 @@ public:
         MyBank->setStyleSheet(QString::fromUtf8(""));
         Addbill = new QAction(MyBank);
         Addbill->setObjectName(QString::fromUtf8("Addbill"));
-        CheckBill = new QAction(MyBank);
-        CheckBill->setObjectName(QString::fromUtf8("CheckBill"));
+        Income = new QAction(MyBank);
+        Income->setObjectName(QString::fromUtf8("Income"));
         Check_YuE = new QAction(MyBank);
         Check_YuE->setObjectName(QString::fromUtf8("Check_YuE"));
         Clock_in = new QAction(MyBank);
@@ -69,7 +69,7 @@ public:
         menubar->addAction(menuremaining_sum->menuAction());
         menubar->addAction(menuEveryDay_Clock->menuAction());
         menuMenu->addAction(Addbill);
-        menuMenu->addAction(CheckBill);
+        menuMenu->addAction(Income);
         menuremaining_sum->addAction(Check_YuE);
         menuEveryDay_Clock->addAction(Clock_in);
 
@@ -82,12 +82,12 @@ public:
     {
         MyBank->setWindowTitle(QCoreApplication::translate("MyBank", "MyBank", nullptr));
         Addbill->setText(QCoreApplication::translate("MyBank", "AddBill", nullptr));
-        CheckBill->setText(QCoreApplication::translate("MyBank", "CheckBill", nullptr));
+        Income->setText(QCoreApplication::translate("MyBank", "Income", nullptr));
         Check_YuE->setText(QCoreApplication::translate("MyBank", "Check", nullptr));
-        Clock_in->setText(QCoreApplication::translate("MyBank", "Clock in", nullptr));
+        Clock_in->setText(QCoreApplication::translate("MyBank", "Add Class", nullptr));
         menuMenu->setTitle(QCoreApplication::translate("MyBank", "Menu", nullptr));
         menuremaining_sum->setTitle(QCoreApplication::translate("MyBank", "remaining sum", nullptr));
-        menuEveryDay_Clock->setTitle(QCoreApplication::translate("MyBank", "EveryDay Clock", nullptr));
+        menuEveryDay_Clock->setTitle(QCoreApplication::translate("MyBank", "Brush Class", nullptr));
     } // retranslateUi
 
 };

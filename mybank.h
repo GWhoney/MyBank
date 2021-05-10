@@ -11,6 +11,7 @@
 #include "addbill.h"
 #include "yu_e.h"
 #include "clock_in.h"
+#include "income.h"
 
 
 QT_BEGIN_NAMESPACE
@@ -30,6 +31,7 @@ private slots:
     void initAddBill();
     void initYuE();
     void initClock_in();
+    void initIncome();
 
 
 private:
@@ -37,6 +39,7 @@ private:
     addBill* addbill=nullptr;
     yu_e* yue=nullptr;
     Clock_in* clock_in=nullptr;
+    Income* m_income=nullptr;
 
 protected:
     void paintEvent(QPaintEvent *event);

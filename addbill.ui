@@ -7,13 +7,13 @@
     <x>0</x>
     <y>0</y>
     <width>355</width>
-    <height>442</height>
+    <height>440</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout_2">
+  <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QLabel" name="label">
      <property name="font">
@@ -227,7 +227,7 @@
     </spacer>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
      <item>
       <widget class="QLabel" name="label_4">
        <property name="font">
@@ -241,8 +241,8 @@
       </widget>
      </item>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_3">
-       <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0" colspan="2">
         <widget class="QRadioButton" name="radioButton">
          <property name="font">
           <font>
@@ -263,7 +263,7 @@
          </attribute>
         </widget>
        </item>
-       <item>
+       <item row="0" column="2" colspan="2">
         <widget class="QRadioButton" name="radioButton_2">
          <property name="font">
           <font>
@@ -278,7 +278,7 @@
          </attribute>
         </widget>
        </item>
-       <item>
+       <item row="0" column="4">
         <widget class="QRadioButton" name="radioButton_3">
          <property name="font">
           <font>
@@ -293,15 +293,7 @@
          </attribute>
         </widget>
        </item>
-      </layout>
-     </item>
-    </layout>
-   </item>
-   <item>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_5">
-       <item>
+       <item row="1" column="0" colspan="2">
         <widget class="QRadioButton" name="radioButton_4">
          <property name="font">
           <font>
@@ -316,7 +308,7 @@
          </attribute>
         </widget>
        </item>
-       <item>
+       <item row="1" column="2" colspan="2">
         <widget class="QRadioButton" name="radioButton_5">
          <property name="font">
           <font>
@@ -331,7 +323,7 @@
          </attribute>
         </widget>
        </item>
-       <item>
+       <item row="1" column="4">
         <widget class="QRadioButton" name="radioButton_6">
          <property name="font">
           <font>
@@ -346,11 +338,7 @@
          </attribute>
         </widget>
        </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_6">
-       <item>
+       <item row="2" column="0" colspan="2">
         <widget class="QRadioButton" name="radioButton_7">
          <property name="font">
           <font>
@@ -365,7 +353,7 @@
          </attribute>
         </widget>
        </item>
-       <item>
+       <item row="2" column="2" colspan="2">
         <widget class="QRadioButton" name="radioButton_8">
          <property name="font">
           <font>
@@ -380,7 +368,7 @@
          </attribute>
         </widget>
        </item>
-       <item>
+       <item row="2" column="4">
         <widget class="QRadioButton" name="radioButton_9">
          <property name="font">
           <font>
@@ -395,11 +383,52 @@
          </attribute>
         </widget>
        </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_7">
-       <item>
+       <item row="3" column="0" colspan="2">
+        <widget class="QRadioButton" name="radioButton_dress">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>群群</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="3" column="2" colspan="2">
+        <widget class="QRadioButton" name="radioButton_fruit">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>水果</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="3" column="4">
+        <widget class="QRadioButton" name="radioButton_13">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>喝的</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="4" column="0">
         <widget class="QRadioButton" name="radioButton_10">
          <property name="font">
           <font>
@@ -414,7 +443,7 @@
          </attribute>
         </widget>
        </item>
-       <item>
+       <item row="4" column="1" colspan="2">
         <widget class="QRadioButton" name="radioButton_11">
          <property name="font">
           <font>
@@ -429,7 +458,7 @@
          </attribute>
         </widget>
        </item>
-       <item>
+       <item row="4" column="3" colspan="2">
         <widget class="QRadioButton" name="radioButton_12">
          <property name="font">
           <font>

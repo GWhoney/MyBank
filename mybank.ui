@@ -31,7 +31,7 @@
      <string>Menu</string>
     </property>
     <addaction name="Addbill"/>
-    <addaction name="CheckBill"/>
+    <addaction name="Income"/>
    </widget>
    <widget class="QMenu" name="menuremaining_sum">
     <property name="title">
@@ -41,7 +41,7 @@
    </widget>
    <widget class="QMenu" name="menuEveryDay_Clock">
     <property name="title">
-     <string>EveryDay Clock</string>
+     <string>Brush Class</string>
     </property>
     <addaction name="Clock_in"/>
    </widget>
@@ -55,9 +55,9 @@
     <string>AddBill</string>
    </property>
   </action>
-  <action name="CheckBill">
+  <action name="Income">
    <property name="text">
-    <string>CheckBill</string>
+    <string>Income</string>
    </property>
   </action>
   <action name="Check_YuE">
@@ -67,7 +67,7 @@
   </action>
   <action name="Clock_in">
    <property name="text">
-    <string>Clock in</string>
+    <string>Add Class</string>
    </property>
   </action>
  </widget>

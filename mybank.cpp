@@ -34,6 +34,7 @@ void MyBank::initSlots()
     connect(ui->Addbill,SIGNAL(triggered()),this,SLOT(initAddBill()));
     connect(ui->Check_YuE,SIGNAL(triggered()),this,SLOT(initYuE()));
     connect(ui->Clock_in,SIGNAL(triggered()),this,SLOT(initClock_in()));
+    connect(ui->Income,SIGNAL(triggered()),this,SLOT(initIncome()));
 }
 
 void MyBank::initAddBill()
@@ -53,6 +54,12 @@ void MyBank::initClock_in()
 {
     clock_in=new Clock_in;
     clock_in->show();
+}
+
+void MyBank::initIncome()
+{
+    m_income=new Income;
+    m_income->show();
 }
 
 void MyBank::paintEvent(QPaintEvent *event)

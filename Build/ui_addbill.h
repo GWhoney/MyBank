@@ -13,6 +13,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QComboBox>
+#include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
@@ -27,7 +28,7 @@ QT_BEGIN_NAMESPACE
 class Ui_addBill
 {
 public:
-    QVBoxLayout *verticalLayout_2;
+    QVBoxLayout *verticalLayout;
     QLabel *label;
     QHBoxLayout *horizontalLayout_10;
     QLabel *Who_Label;
@@ -46,22 +47,21 @@ public:
     QComboBox *how_comboBox;
     QSpacerItem *horizontalSpacer;
     QSpacerItem *verticalSpacer_2;
-    QHBoxLayout *horizontalLayout_4;
-    QLabel *label_4;
     QHBoxLayout *horizontalLayout_3;
+    QLabel *label_4;
+    QGridLayout *gridLayout;
     QRadioButton *radioButton;
     QRadioButton *radioButton_2;
     QRadioButton *radioButton_3;
-    QVBoxLayout *verticalLayout;
-    QHBoxLayout *horizontalLayout_5;
     QRadioButton *radioButton_4;
     QRadioButton *radioButton_5;
     QRadioButton *radioButton_6;
-    QHBoxLayout *horizontalLayout_6;
     QRadioButton *radioButton_7;
     QRadioButton *radioButton_8;
     QRadioButton *radioButton_9;
-    QHBoxLayout *horizontalLayout_7;
+    QRadioButton *radioButton_dress;
+    QRadioButton *radioButton_fruit;
+    QRadioButton *radioButton_13;
     QRadioButton *radioButton_10;
     QRadioButton *radioButton_11;
     QRadioButton *radioButton_12;
@@ -76,16 +76,16 @@ public:
     {
         if (addBill->objectName().isEmpty())
             addBill->setObjectName(QString::fromUtf8("addBill"));
-        addBill->resize(355, 442);
-        verticalLayout_2 = new QVBoxLayout(addBill);
-        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        addBill->resize(355, 440);
+        verticalLayout = new QVBoxLayout(addBill);
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         label = new QLabel(addBill);
         label->setObjectName(QString::fromUtf8("label"));
         QFont font;
         font.setPointSize(25);
         label->setFont(font);
 
-        verticalLayout_2->addWidget(label);
+        verticalLayout->addWidget(label);
 
         horizontalLayout_10 = new QHBoxLayout();
         horizontalLayout_10->setObjectName(QString::fromUtf8("horizontalLayout_10"));
@@ -109,7 +109,7 @@ public:
         horizontalLayout_10->addItem(horizontalSpacer_5);
 
 
-        verticalLayout_2->addLayout(horizontalLayout_10);
+        verticalLayout->addLayout(horizontalLayout_10);
 
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
@@ -130,7 +130,7 @@ public:
         horizontalLayout->addItem(horizontalSpacer_2);
 
 
-        verticalLayout_2->addLayout(horizontalLayout);
+        verticalLayout->addLayout(horizontalLayout);
 
         horizontalLayout_9 = new QHBoxLayout();
         horizontalLayout_9->setObjectName(QString::fromUtf8("horizontalLayout_9"));
@@ -151,7 +151,7 @@ public:
         horizontalLayout_9->addItem(horizontalSpacer_4);
 
 
-        verticalLayout_2->addLayout(horizontalLayout_9);
+        verticalLayout->addLayout(horizontalLayout_9);
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
@@ -179,22 +179,22 @@ public:
 
         horizontalLayout_2->setStretch(1, 5);
 
-        verticalLayout_2->addLayout(horizontalLayout_2);
+        verticalLayout->addLayout(horizontalLayout_2);
 
         verticalSpacer_2 = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
-        verticalLayout_2->addItem(verticalSpacer_2);
+        verticalLayout->addItem(verticalSpacer_2);
 
-        horizontalLayout_4 = new QHBoxLayout();
-        horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
+        horizontalLayout_3 = new QHBoxLayout();
+        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
         label_4 = new QLabel(addBill);
         label_4->setObjectName(QString::fromUtf8("label_4"));
         label_4->setFont(font1);
 
-        horizontalLayout_4->addWidget(label_4);
+        horizontalLayout_3->addWidget(label_4);
 
-        horizontalLayout_3 = new QHBoxLayout();
-        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
+        gridLayout = new QGridLayout();
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         radioButton = new QRadioButton(addBill);
         buttonGroup = new QButtonGroup(addBill);
         buttonGroup->setObjectName(QString::fromUtf8("buttonGroup"));
@@ -204,114 +204,115 @@ public:
         radioButton->setTabletTracking(false);
         radioButton->setChecked(true);
 
-        horizontalLayout_3->addWidget(radioButton);
+        gridLayout->addWidget(radioButton, 0, 0, 1, 2);
 
         radioButton_2 = new QRadioButton(addBill);
         buttonGroup->addButton(radioButton_2);
         radioButton_2->setObjectName(QString::fromUtf8("radioButton_2"));
         radioButton_2->setFont(font1);
 
-        horizontalLayout_3->addWidget(radioButton_2);
+        gridLayout->addWidget(radioButton_2, 0, 2, 1, 2);
 
         radioButton_3 = new QRadioButton(addBill);
         buttonGroup->addButton(radioButton_3);
         radioButton_3->setObjectName(QString::fromUtf8("radioButton_3"));
         radioButton_3->setFont(font1);
 
-        horizontalLayout_3->addWidget(radioButton_3);
+        gridLayout->addWidget(radioButton_3, 0, 4, 1, 1);
 
-
-        horizontalLayout_4->addLayout(horizontalLayout_3);
-
-
-        verticalLayout_2->addLayout(horizontalLayout_4);
-
-        verticalLayout = new QVBoxLayout();
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        horizontalLayout_5 = new QHBoxLayout();
-        horizontalLayout_5->setObjectName(QString::fromUtf8("horizontalLayout_5"));
         radioButton_4 = new QRadioButton(addBill);
         buttonGroup->addButton(radioButton_4);
         radioButton_4->setObjectName(QString::fromUtf8("radioButton_4"));
         radioButton_4->setFont(font1);
 
-        horizontalLayout_5->addWidget(radioButton_4);
+        gridLayout->addWidget(radioButton_4, 1, 0, 1, 2);
 
         radioButton_5 = new QRadioButton(addBill);
         buttonGroup->addButton(radioButton_5);
         radioButton_5->setObjectName(QString::fromUtf8("radioButton_5"));
         radioButton_5->setFont(font1);
 
-        horizontalLayout_5->addWidget(radioButton_5);
+        gridLayout->addWidget(radioButton_5, 1, 2, 1, 2);
 
         radioButton_6 = new QRadioButton(addBill);
         buttonGroup->addButton(radioButton_6);
         radioButton_6->setObjectName(QString::fromUtf8("radioButton_6"));
         radioButton_6->setFont(font1);
 
-        horizontalLayout_5->addWidget(radioButton_6);
+        gridLayout->addWidget(radioButton_6, 1, 4, 1, 1);
 
-
-        verticalLayout->addLayout(horizontalLayout_5);
-
-        horizontalLayout_6 = new QHBoxLayout();
-        horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
         radioButton_7 = new QRadioButton(addBill);
         buttonGroup->addButton(radioButton_7);
         radioButton_7->setObjectName(QString::fromUtf8("radioButton_7"));
         radioButton_7->setFont(font1);
 
-        horizontalLayout_6->addWidget(radioButton_7);
+        gridLayout->addWidget(radioButton_7, 2, 0, 1, 2);
 
         radioButton_8 = new QRadioButton(addBill);
         buttonGroup->addButton(radioButton_8);
         radioButton_8->setObjectName(QString::fromUtf8("radioButton_8"));
         radioButton_8->setFont(font1);
 
-        horizontalLayout_6->addWidget(radioButton_8);
+        gridLayout->addWidget(radioButton_8, 2, 2, 1, 2);
 
         radioButton_9 = new QRadioButton(addBill);
         buttonGroup->addButton(radioButton_9);
         radioButton_9->setObjectName(QString::fromUtf8("radioButton_9"));
         radioButton_9->setFont(font1);
 
-        horizontalLayout_6->addWidget(radioButton_9);
+        gridLayout->addWidget(radioButton_9, 2, 4, 1, 1);
 
+        radioButton_dress = new QRadioButton(addBill);
+        buttonGroup->addButton(radioButton_dress);
+        radioButton_dress->setObjectName(QString::fromUtf8("radioButton_dress"));
+        radioButton_dress->setFont(font1);
 
-        verticalLayout->addLayout(horizontalLayout_6);
+        gridLayout->addWidget(radioButton_dress, 3, 0, 1, 2);
 
-        horizontalLayout_7 = new QHBoxLayout();
-        horizontalLayout_7->setObjectName(QString::fromUtf8("horizontalLayout_7"));
+        radioButton_fruit = new QRadioButton(addBill);
+        buttonGroup->addButton(radioButton_fruit);
+        radioButton_fruit->setObjectName(QString::fromUtf8("radioButton_fruit"));
+        radioButton_fruit->setFont(font1);
+
+        gridLayout->addWidget(radioButton_fruit, 3, 2, 1, 2);
+
+        radioButton_13 = new QRadioButton(addBill);
+        buttonGroup->addButton(radioButton_13);
+        radioButton_13->setObjectName(QString::fromUtf8("radioButton_13"));
+        radioButton_13->setFont(font1);
+
+        gridLayout->addWidget(radioButton_13, 3, 4, 1, 1);
+
         radioButton_10 = new QRadioButton(addBill);
         buttonGroup->addButton(radioButton_10);
         radioButton_10->setObjectName(QString::fromUtf8("radioButton_10"));
         radioButton_10->setFont(font1);
 
-        horizontalLayout_7->addWidget(radioButton_10);
+        gridLayout->addWidget(radioButton_10, 4, 0, 1, 1);
 
         radioButton_11 = new QRadioButton(addBill);
         buttonGroup->addButton(radioButton_11);
         radioButton_11->setObjectName(QString::fromUtf8("radioButton_11"));
         radioButton_11->setFont(font1);
 
-        horizontalLayout_7->addWidget(radioButton_11);
+        gridLayout->addWidget(radioButton_11, 4, 1, 1, 2);
 
         radioButton_12 = new QRadioButton(addBill);
         buttonGroup->addButton(radioButton_12);
         radioButton_12->setObjectName(QString::fromUtf8("radioButton_12"));
         radioButton_12->setFont(font1);
 
-        horizontalLayout_7->addWidget(radioButton_12);
+        gridLayout->addWidget(radioButton_12, 4, 3, 1, 2);
 
 
-        verticalLayout->addLayout(horizontalLayout_7);
+        horizontalLayout_3->addLayout(gridLayout);
 
 
-        verticalLayout_2->addLayout(verticalLayout);
+        verticalLayout->addLayout(horizontalLayout_3);
 
         verticalSpacer = new QSpacerItem(20, 48, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
-        verticalLayout_2->addItem(verticalSpacer);
+        verticalLayout->addItem(verticalSpacer);
 
         horizontalLayout_8 = new QHBoxLayout();
         horizontalLayout_8->setObjectName(QString::fromUtf8("horizontalLayout_8"));
@@ -330,7 +331,7 @@ public:
         horizontalLayout_8->addWidget(Btn_cencel);
 
 
-        verticalLayout_2->addLayout(horizontalLayout_8);
+        verticalLayout->addLayout(horizontalLayout_8);
 
 
         retranslateUi(addBill);
@@ -367,6 +368,9 @@ public:
         radioButton_7->setText(QCoreApplication::translate("addBill", "\344\272\244\351\200\232", nullptr));
         radioButton_8->setText(QCoreApplication::translate("addBill", "\345\255\246\344\271\240", nullptr));
         radioButton_9->setText(QCoreApplication::translate("addBill", "\345\250\261\344\271\220", nullptr));
+        radioButton_dress->setText(QCoreApplication::translate("addBill", "\347\276\244\347\276\244", nullptr));
+        radioButton_fruit->setText(QCoreApplication::translate("addBill", "\346\260\264\346\236\234", nullptr));
+        radioButton_13->setText(QCoreApplication::translate("addBill", "\345\226\235\347\232\204", nullptr));
         radioButton_10->setText(QCoreApplication::translate("addBill", "\351\245\255\351\245\255", nullptr));
         radioButton_11->setText(QCoreApplication::translate("addBill", "\345\226\235\347\232\204", nullptr));
         radioButton_12->setText(QCoreApplication::translate("addBill", "\345\205\266\344\273\226", nullptr));

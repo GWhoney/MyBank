@@ -6,6 +6,7 @@ addBill::addBill(QWidget *parent) :
     ui(new Ui::addBill)
 {
     ui->setupUi(this);
+    ui->Who_ComboBox->setCurrentText("小高");
     db=QSqlDatabase::addDatabase("QMYSQL");
     db.setHostName("127.0.0.1");
     db.setUserName("root");

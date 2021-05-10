@@ -18,6 +18,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     addbill.cpp \
     clock_in.cpp \
+    income.cpp \
     main.cpp \
     mybank.cpp \
     yu_e.cpp
@@ -25,12 +26,14 @@ SOURCES += \
 HEADERS += \
     addbill.h \
     clock_in.h \
+    income.h \
     mybank.h \
     yu_e.h
 
 FORMS += \
     addbill.ui \
     clock_in.ui \
+    income.ui \
     mybank.ui \
     yu_e.ui
 
