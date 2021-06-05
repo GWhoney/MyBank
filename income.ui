@@ -117,7 +117,7 @@
    </item>
    <item>
     <layout class="QGridLayout" name="gridLayout">
-     <item row="0" column="0">
+     <item row="0" column="0" colspan="2">
       <widget class="QLabel" name="Label_Income_2">
        <property name="font">
         <font>
@@ -129,7 +129,7 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="1">
+     <item row="0" column="2">
       <widget class="QRadioButton" name="RadioButton_Brush_Class">
        <property name="font">
         <font>
@@ -156,7 +156,7 @@
        </attribute>
       </widget>
      </item>
-     <item row="0" column="2" colspan="2">
+     <item row="0" column="3" colspan="2">
       <widget class="QRadioButton" name="RadioButton_TryPlay">
        <property name="font">
         <font>
@@ -171,7 +171,7 @@
        </attribute>
       </widget>
      </item>
-     <item row="0" column="4" colspan="2">
+     <item row="0" column="5" colspan="2">
       <widget class="QRadioButton" name="RadioButton_Coupon">
        <property name="font">
         <font>
@@ -201,7 +201,7 @@
        </attribute>
       </widget>
      </item>
-     <item row="1" column="1" colspan="2">
+     <item row="1" column="2" colspan="2">
       <widget class="QRadioButton" name="RadioButton_Alimony">
        <property name="font">
         <font>
@@ -216,7 +216,7 @@
        </attribute>
       </widget>
      </item>
-     <item row="1" column="3" colspan="2">
+     <item row="1" column="4" colspan="2">
       <widget class="QRadioButton" name="RadioButton_Wage">
        <property name="font">
         <font>
@@ -231,7 +231,7 @@
        </attribute>
       </widget>
      </item>
-     <item row="1" column="5">
+     <item row="1" column="6">
       <widget class="QRadioButton" name="RadioButton_Fund">
        <property name="font">
         <font>
@@ -244,6 +244,33 @@
        <attribute name="buttonGroup">
         <string notr="true">Button_Income</string>
        </attribute>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QRadioButton" name="RadioButton_Fund_2">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>退款</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">Button_Income</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="2" column="1" colspan="2">
+      <widget class="QRadioButton" name="RadioButton_Fund_3">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>刷视频</string>
+       </property>
       </widget>
      </item>
     </layout>

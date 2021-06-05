@@ -46,6 +46,8 @@ public:
     QRadioButton *RadioButton_Alimony;
     QRadioButton *RadioButton_Wage;
     QRadioButton *RadioButton_Fund;
+    QRadioButton *RadioButton_Fund_2;
+    QRadioButton *RadioButton_Fund_3;
     QHBoxLayout *horizontalLayout_2;
     QPushButton *pushButton_2;
     QSpacerItem *horizontalSpacer;
@@ -114,7 +116,7 @@ public:
         Label_Income_2->setObjectName(QString::fromUtf8("Label_Income_2"));
         Label_Income_2->setFont(font);
 
-        gridLayout->addWidget(Label_Income_2, 0, 0, 1, 1);
+        gridLayout->addWidget(Label_Income_2, 0, 0, 1, 2);
 
         RadioButton_Brush_Class = new QRadioButton(Income);
         Button_Income = new QButtonGroup(Income);
@@ -127,21 +129,21 @@ public:
         RadioButton_Brush_Class->setAutoFillBackground(false);
         RadioButton_Brush_Class->setChecked(true);
 
-        gridLayout->addWidget(RadioButton_Brush_Class, 0, 1, 1, 1);
+        gridLayout->addWidget(RadioButton_Brush_Class, 0, 2, 1, 1);
 
         RadioButton_TryPlay = new QRadioButton(Income);
         Button_Income->addButton(RadioButton_TryPlay);
         RadioButton_TryPlay->setObjectName(QString::fromUtf8("RadioButton_TryPlay"));
         RadioButton_TryPlay->setFont(font);
 
-        gridLayout->addWidget(RadioButton_TryPlay, 0, 2, 1, 2);
+        gridLayout->addWidget(RadioButton_TryPlay, 0, 3, 1, 2);
 
         RadioButton_Coupon = new QRadioButton(Income);
         Button_Income->addButton(RadioButton_Coupon);
         RadioButton_Coupon->setObjectName(QString::fromUtf8("RadioButton_Coupon"));
         RadioButton_Coupon->setFont(font);
 
-        gridLayout->addWidget(RadioButton_Coupon, 0, 4, 1, 2);
+        gridLayout->addWidget(RadioButton_Coupon, 0, 5, 1, 2);
 
         RadioButton_Baoxiao = new QRadioButton(Income);
         Button_Income->addButton(RadioButton_Baoxiao);
@@ -155,21 +157,34 @@ public:
         RadioButton_Alimony->setObjectName(QString::fromUtf8("RadioButton_Alimony"));
         RadioButton_Alimony->setFont(font);
 
-        gridLayout->addWidget(RadioButton_Alimony, 1, 1, 1, 2);
+        gridLayout->addWidget(RadioButton_Alimony, 1, 2, 1, 2);
 
         RadioButton_Wage = new QRadioButton(Income);
         Button_Income->addButton(RadioButton_Wage);
         RadioButton_Wage->setObjectName(QString::fromUtf8("RadioButton_Wage"));
         RadioButton_Wage->setFont(font);
 
-        gridLayout->addWidget(RadioButton_Wage, 1, 3, 1, 2);
+        gridLayout->addWidget(RadioButton_Wage, 1, 4, 1, 2);
 
         RadioButton_Fund = new QRadioButton(Income);
         Button_Income->addButton(RadioButton_Fund);
         RadioButton_Fund->setObjectName(QString::fromUtf8("RadioButton_Fund"));
         RadioButton_Fund->setFont(font);
 
-        gridLayout->addWidget(RadioButton_Fund, 1, 5, 1, 1);
+        gridLayout->addWidget(RadioButton_Fund, 1, 6, 1, 1);
+
+        RadioButton_Fund_2 = new QRadioButton(Income);
+        Button_Income->addButton(RadioButton_Fund_2);
+        RadioButton_Fund_2->setObjectName(QString::fromUtf8("RadioButton_Fund_2"));
+        RadioButton_Fund_2->setFont(font);
+
+        gridLayout->addWidget(RadioButton_Fund_2, 2, 0, 1, 1);
+
+        RadioButton_Fund_3 = new QRadioButton(Income);
+        RadioButton_Fund_3->setObjectName(QString::fromUtf8("RadioButton_Fund_3"));
+        RadioButton_Fund_3->setFont(font);
+
+        gridLayout->addWidget(RadioButton_Fund_3, 2, 1, 1, 2);
 
 
         verticalLayout->addLayout(gridLayout);
@@ -218,6 +233,8 @@ public:
         RadioButton_Alimony->setText(QCoreApplication::translate("Income", "\347\224\237\346\264\273\350\264\271", nullptr));
         RadioButton_Wage->setText(QCoreApplication::translate("Income", "\345\267\245\350\265\204", nullptr));
         RadioButton_Fund->setText(QCoreApplication::translate("Income", "\345\237\272\351\207\221", nullptr));
+        RadioButton_Fund_2->setText(QCoreApplication::translate("Income", "\351\200\200\346\254\276", nullptr));
+        RadioButton_Fund_3->setText(QCoreApplication::translate("Income", "\345\210\267\350\247\206\351\242\221", nullptr));
         pushButton_2->setText(QCoreApplication::translate("Income", "\347\241\256\345\256\232", nullptr));
         pushButton->setText(QCoreApplication::translate("Income", "\345\217\226\346\266\210", nullptr));
     } // retranslateUi

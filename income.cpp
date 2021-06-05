@@ -33,7 +33,7 @@ void Income::on_pushButton_2_clicked()
     QString time=QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm:ss");
     int Way=ui->comboBox->currentIndex();
     QString Way_T=ui->comboBox->currentText();
-    int Money=ui->lineEdit_Income->text().toUInt();
+    double Money=ui->lineEdit_Income->text().toDouble();
     QString Mon_T=ui->lineEdit_Income->text();
     QString Income=ui->Button_Income->checkedButton()->text();
 
@@ -42,7 +42,7 @@ void Income::on_pushButton_2_clicked()
     {
     case 0:
         {
-            int Mon=ui->lineEdit_Income->text().toDouble();
+            double Mon=ui->lineEdit_Income->text().toDouble();
             WeChat=WeChat+Mon;
             qDebug()<<WeChat;
             bool ok=query.exec(QString("update Diposit set WeChat_Gao=%1").arg(WeChat));
@@ -51,28 +51,28 @@ void Income::on_pushButton_2_clicked()
         }
     case 1:
         {
-            int Mon=ui->lineEdit_Income->text().toDouble();
+            double Mon=ui->lineEdit_Income->text().toDouble();
             Alipay=Alipay+Mon;
             bool ok=query.exec(QString("update Diposit set Alipay_Gao=%1").arg(Alipay));
             break;
         }
     case 2:
         {
-            int Mon=ui->lineEdit_Income->text().toDouble();
+            double Mon=ui->lineEdit_Income->text().toDouble();
             NongShangBank=NongShangBank+Mon;
             bool ok=query.exec(QString("update Diposit set NongShangBank_Gao=%1").arg(NongShangBank));
             break;
         }
     case 3:
         {
-            int Mon=ui->lineEdit_Income->text().toDouble();
+            double Mon=ui->lineEdit_Income->text().toDouble();
             JianSheBank=JianSheBank+Mon;
             bool ok=query.exec(QString("update Diposit set JianSheBang_Gao=%1").arg(JianSheBank));
             break;
         }
     case 4:
         {
-            int Mon=ui->lineEdit_Income->text().toDouble();
+            double Mon=ui->lineEdit_Income->text().toDouble();
             Cash=Cash+Mon;
             bool ok=query.exec(QString("update Diposit set Cash_Gao=%1").arg(Cash));
             break;

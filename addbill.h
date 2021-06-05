@@ -37,6 +37,8 @@ private slots:
 
     void on_Btn_sure_clicked();
 
+    void on_CheckBox_BaoXiao_stateChanged(int arg1);
+
 private:
     Ui::addBill *ui;
     QSqlDatabase db;
@@ -47,6 +49,7 @@ private:
     double Cash;
     double HuaBei;
     double Loans;
+    bool m_BaoXiao;
 };
 
 #if 0
